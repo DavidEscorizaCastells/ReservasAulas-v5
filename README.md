@@ -23,12 +23,12 @@ Tu tarea consiste en dotar a la aplicación de la tarea anterior de un nuevo mod
  
 Para ello debes realizar las siguientes acciones:
 
-1.Lo primero que debes hacer es crear un repositorio  en GitHub a partir de tu repositorio de la tarea anterior.
-2.Clona dicho repositorio localmente para empezar a modicfiarlo. Modifica el fichero README.md para que indique tus datos y los de esta tarea. Realiza tu primer commit.
-3.Realiza los cambios necesarios para que el proyecto pueda contener cuatro aplicaciones diferentes: ficheros con IU textual, ficheros con IU gráfica, BD con IU textual y BD con IU gráfica. Haz un commit.
-4.Haz que la gestión de aulas utilice la persistencia en la BD. Haz un commit.
-5.Haz que la gestión de profesores utilice la persistencia en la BD. Haz un commit.
-6.Haz que la gestión de reservas utilice la persistencia en la BD. Haz un commit.
+1. Lo primero que debes hacer es crear un repositorio  en GitHub a partir de tu repositorio de la tarea anterior.
+2. Clona dicho repositorio localmente para empezar a modicfiarlo. Modifica el fichero README.md para que indique tus datos y los de esta tarea. Realiza tu primer commit.
+3. Realiza los cambios necesarios para que el proyecto pueda contener cuatro aplicaciones diferentes: ficheros con IU textual, ficheros con IU gráfica, BD con IU textual y BD con IU gráfica. Haz un commit.
+4. Haz que la gestión de aulas utilice la persistencia en la BD. Haz un commit.
+5. Haz que la gestión de profesores utilice la persistencia en la BD. Haz un commit.
+6. Haz que la gestión de reservas utilice la persistencia en la BD. Haz un commit.
  
 ######Se valorará:
 
