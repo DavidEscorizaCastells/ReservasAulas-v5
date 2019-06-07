@@ -25,6 +25,9 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+    // MogoDB Driver
+    compile 'org.mongodb:mongodb-driver-sync:3.10.1'
 }
 
 //Añadido por mí
@@ -34,7 +37,7 @@ mainClassName = 'org.iesalandalus.programacion.reservasaulas.MainApp'
 
 jar {
 	manifest {
-		attributes 'Main-Class': 'org.iesalandalus.programacion.reservasaulas.MainApp'
+		attributes 'Main-Class': 'org.iesalandalus.MainApp'
 	}
 }
 

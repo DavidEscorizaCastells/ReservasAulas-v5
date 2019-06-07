@@ -10,6 +10,7 @@ import java.util.List;
 import javax.naming.OperationNotSupportedException;
 
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Profesor;
+import org.iesalandalus.programacion.reservasaulas.modelo.ficheros.dao.Profesores;
 import org.junit.Test;
 
 public class ProfesoresTest {

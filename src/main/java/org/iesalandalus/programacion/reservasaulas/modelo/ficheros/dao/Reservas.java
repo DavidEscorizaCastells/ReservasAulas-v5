@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.reservasaulas.modelo.dao;
+package org.iesalandalus.programacion.reservasaulas.modelo.ficheros.dao;
 
 import java.io.EOFException;
 import java.io.File;

@@ -1,12 +1,14 @@
-package org.iesalandalus.programacion.reservasaulas.modelo;
+package org.iesalandalus.programacion.reservasaulas.modelo.mongobd;
 
 import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.reservasaulas.modelo.dao.Aulas;
-import org.iesalandalus.programacion.reservasaulas.modelo.dao.Profesores;
-import org.iesalandalus.programacion.reservasaulas.modelo.dao.Reservas;
+import org.iesalandalus.programacion.reservasaulas.modelo.IModeloReservasAulas;
+import org.iesalandalus.programacion.reservasaulas.modelo.mongobd.dao.Aulas;
+import org.iesalandalus.programacion.reservasaulas.modelo.mongobd.dao.Profesores;
+import org.iesalandalus.programacion.reservasaulas.modelo.mongobd.dao.Reservas;
+import org.iesalandalus.programacion.reservasaulas.modelo.mongobd.utilidades.MongoDB;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Aula;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Profesor;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Reserva;
@@ -54,16 +56,6 @@ public class ModeloReservasAulas implements IModeloReservasAulas {
 	}
 	
 	@Override
-	public void leerAulas() {
-		aulas.leer();
-	}
-	
-	@Override
-	public void escribirAulas() {
-		aulas.escribir();
-	}
-	
-	@Override
 	public List<Profesor> getProfesores() {
 		return profesores.getProfesores();
 	}
@@ -91,16 +83,6 @@ public class ModeloReservasAulas implements IModeloReservasAulas {
 	@Override
 	public void borrarProfesor (Profesor profesor) throws OperationNotSupportedException {
 		profesores.borrar(profesor);
-	}
-	
-	@Override
-	public void leerProfesores() {
-		profesores.leer();
-	}
-	
-	@Override
-	public void escribirProfesores() {
-		profesores.escribir();
 	}
 	
 	@Override
@@ -154,12 +136,12 @@ public class ModeloReservasAulas implements IModeloReservasAulas {
 	}
 	
 	@Override
-	public void leerReservas() {
-		reservas.leer();
+	public void comenzar() {
+		MongoDB.establecerConexion();
 	}
-	
+
 	@Override
-	public void escribirReservas() {
-		reservas.escribir();
+	public void terminar() {
+		MongoDB.cerrarCliente();
 	}
 }
