@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservasaulas.vista.iugrafica.controladoresvistas.ControladorMenuPrincipal">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#salir" text="Salir" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Aulas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listarAulas" text="Listar aulas" />
+                  <MenuItem mnemonicParsing="false" onAction="#anadirAulas" text="Añadir aula" />
+                  <MenuItem mnemonicParsing="false" onAction="#borrarAulas" text="Borrar aula" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarReservasAula" text="Mostrar reservas de un aula" />
+                  <MenuItem mnemonicParsing="false" onAction="#consultarDisponibilidad" text="Colsultar disponibilidad" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Profesores">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listarProfesores" text="Listar profesores" />
+                  <MenuItem mnemonicParsing="false" onAction="#anadirProfesor" text="Añadir profesores" />
+                  <MenuItem mnemonicParsing="false" onAction="#borrarProfesor" text="Borrar profesor" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarReservasProfesor" text="Listar reservas por profesor" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Reservas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listarReservas" text="Listar reservas" />
+                  <MenuItem mnemonicParsing="false" onAction="#realizarReserva" text="Realizar reserva" />
+                  <MenuItem mnemonicParsing="false" onAction="#anularReserva" text="Anular reserva" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>

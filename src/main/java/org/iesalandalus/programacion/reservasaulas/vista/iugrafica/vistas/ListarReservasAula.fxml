@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="243.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservasaulas.vista.iugrafica.controladoresvistas.ControladorListarReservasAulas">
+   <children>
+      <HBox alignment="CENTER" prefHeight="77.0" prefWidth="243.0" spacing="5.0">
+         <children>
+            <Label fx:id="lbAula" text="Aula: " />
+            <ComboBox fx:id="cbAula" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="335.0" spacing="20.0">
+         <children>
+            <Button fx:id="btListar" mnemonicParsing="false" onAction="#listarReservasAula" text="Listar">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#Cancelar" text="Cancelar" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <ListView fx:id="lvReservasAulas" prefHeight="200.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </ListView>
+   </children>
+</VBox>
